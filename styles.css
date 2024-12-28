@@ -1,0 +1,24 @@
+
+        /* Style the container to set the grid layout */
+        #container {
+            display: grid;
+            grid-template-columns: repeat(16, 1fr); /* 16 columns */
+            grid-template-rows: repeat(16, 1fr); /* 16 rows */
+            height: 100%; /* Fill the full height of the viewport */
+            width: 100%; /* Fill the full width of the viewport */
+            
+            padding: 10px; /* Optional padding around the grid */
+            box-sizing: border-box; /* Ensure padding doesn't affect the total width/height */
+        }
+        
+        /* Style each div */
+        .box {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+            border: 0px solid #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
