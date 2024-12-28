@@ -1,6 +1,8 @@
+let size = 0
 const container = document.querySelector("#container");
-
-for (let i = 1; i <= 256; i++) {
+const btn = document.querySelector('#btn')
+btn.onclick = () => size = parseInt(prompt('enter the new canvas size'))
+for (let i = 1; i <= size; i++) {
     // Create a new div
     const newDiv = document.createElement('div');
     
@@ -20,3 +22,7 @@ boxes.forEach(box => {
         box.style.backgroundColor = 'lightcoral'; // Change color on hover
     });
 });
+
+container.style.gridTemplateColumns('repeat(size, 1fr);')  /* 16 columns */
+container.style.gridTemplateRows ('repeat(16, 1fr);') /* 16 rows */
+
